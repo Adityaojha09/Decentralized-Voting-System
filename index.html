@@ -1,0 +1,42 @@
+```html
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Decentralized Voting System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Decentralized Voting System</h1>
+
+        <button id="connectButton">Connect Wallet</button>
+
+        <p id="wallet">Wallet: Not Connected</p>
+
+        <h2>Candidates</h2>
+
+        <div class="candidate">
+            <span>Rahul</span>
+            <button onclick="vote(0)">Vote</button>
+            <p>Votes: <span id="rahulVotes">0</span></p>
+        </div>
+
+        <div class="candidate">
+            <span>Amit</span>
+            <button onclick="vote(1)">Vote</button>
+            <p>Votes: <span id="amitVotes">0</span></p>
+        </div>
+
+        <p id="message"></p>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/ethers@6.13.2/dist/ethers.umd.min.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>
+```
